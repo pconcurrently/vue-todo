@@ -7,9 +7,9 @@
         <div class='todo__content'>
           <ToDoItem v-for='todo in list' :todo='todo' @delete='onDeleteItem' :key='todo.id' />
         </div>
-        <form class='todo__form' @submit="createNewToDoItem()">
+        <form class='todo__form'>
           <input type='text' v-model='todo' v-on:keyup.enter='createNewToDoItem'>
-          <input type="submit" class='todo__add' value='+'/>
+          <input type="submit" class='todo__add' value='+' @click="createNewToDoItem"/>
         </form>
       </div>
     </div>
