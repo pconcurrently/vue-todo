@@ -68,6 +68,7 @@ export default {
 
     &__add {
       color: $main;
+      font-size: 18px;
     }
   }
 
